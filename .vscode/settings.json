@@ -1,0 +1,6 @@
+{
+  "python.pythonPath": ".venv/bin/python3.7",
+  "python.linting.pylintUseMinimalCheckers": false,
+  "python.linting.pylintEnabled": true,
+  "python.linting.mypyEnabled": true
+}
