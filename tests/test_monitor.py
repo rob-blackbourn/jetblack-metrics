@@ -8,11 +8,13 @@ def test_metric():
     """Test the basic metric"""
 
     metric = Metric()
+    exception_raised = False
     try:
         with monitor(metric):
             1.0 / 0 # pylint: disable=pointless-statement
     except ZeroDivisionError:
-        pass
+        exception_raised = True
+    assert exception_raised
     assert metric.error is not None
 
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jetblack-metrics"
-version = "1.0.0"
+version = "1.0.1"
 description = "Generic metrics and context bases monitoring"
 authors = ["Rob Blackbourn <rob.blackbourn@gmail.com>"]
 license = "Apache-2.0"

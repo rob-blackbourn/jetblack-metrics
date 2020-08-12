@@ -24,3 +24,5 @@ def monitor(metric: TMetric) -> Iterator[TMetric]:
         metric.error = error
     finally:
         metric.on_exit()
+        if metric.error:
+            raise metric.error
